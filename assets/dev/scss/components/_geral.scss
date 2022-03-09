@@ -1,0 +1,32 @@
+// GERAL
+//--------------------------------------
+
+/*imagen superior*/
+.imagem-superior{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 75px ;
+}
+
+/*boton*/
+
+.orcamento {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orcamento-boton {
+    background-color: $color-green;
+    border: none;
+    height: 120px;
+    width: 800px;
+    border-radius: 60px;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 36px;
+    cursor: pointer;
+
+}

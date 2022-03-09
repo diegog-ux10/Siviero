@@ -1,0 +1,46 @@
+// HEADER
+//--------------------------------------
+header {
+    width: $full;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*logo*/
+    img {
+        height: 4rem;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.menu-item {
+    text-decoration: none;
+    margin: auto 12px;
+    border-right: 1px solid var(--grey-text) ;
+    padding: 4px;
+    margin: 0;
+    padding: 0 4px;
+    color: var(--grey-text);
+    /*remover borda do último item de menu*/
+    :last-child {
+        border-right: none;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/*responsive cabeceira*/
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: 40vh;
+    }
+}
