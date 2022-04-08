@@ -11,14 +11,6 @@
 	//--------------------------------------
 	include_once('functions-create-post.php');
 
-    // CREATE MY ELEMENTS
-    //--------------------------------------
-	include_once('functions-my-elements.php');
-
-	// CREATE FUNCTIONS BLOG
-    //--------------------------------------
-	include_once('functions-blog.php');
-
 
 	// SETUP INITIAL
 	//--------------------------------------
@@ -91,12 +83,13 @@
 		wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
 		wp_enqueue_script('js-main', get_template_directory_uri() . '/assets/js/scripts.min.js', wp_get_theme()->get( 'Version'));
 
-		// SLICK SLIDER
+		//SLICK SLIDER
 		if(is_home()){
 			wp_enqueue_style('css-slick', get_template_directory_uri() . '/assets/vendor/slick/slick.css', '1.0', true);
 			wp_enqueue_script('js-slick', get_template_directory_uri() . '/assets/vendor/slick/slick.min.js', '1.0', true);
 			wp_enqueue_script('js-slider-home', get_template_directory_uri() . '/assets/js/slider-home.min.js', wp_get_theme()->get( 'Version'));
 		}
+
 
 		// FORMS
 		if(is_page() == 'contato'){
@@ -136,25 +129,3 @@
 		return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
 	}
 	add_filter('language_attributes', 'add_opengraph_doctype');
-
-
-	// Social Share
-	function insert_fb_in_head() {
-		global $post;
-		if ( !is_singular())
-			return;
-
-		echo '<meta property="og:title" content="' . get_the_title() . '"/>';
-		echo '<meta property="og:type" content="article"/>';
-		echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-		echo '<meta property="og:site_name" content="'. get_bloginfo() .'"/>';
-
-		if(!has_post_thumbnail( $post->ID )) {
-			$default_image = UrlBase() . '/screenshot.png';
-			echo '<meta property="og:image" content="' . $default_image . '"/>';
-		} else{
-			$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small' );
-			echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
-		}
-	}
-	add_action('wp_head', 'insert_fb_in_head', 5);

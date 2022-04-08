@@ -1,40 +1,31 @@
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<!-- bg browser -->
-	<meta name="theme-color" content="#fff">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
-
-	<!-- fontawesome -->
-	<script src="https://kit.fontawesome.com/db0f3e059c.js" crossorigin="anonymous"></script>
-
-	<?php wp_head(); ?>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siviero</title>
+    <?php wp_head() ?>
+  
 </head>
-
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-
-	<!--Header-->
-    <header style="background-image: url(<?php echo get_theme_file_uri('/assets/img/fondo-menu.png'); ?>); background-size: cover;">
-        <!--logotipo-->
-        <img src="<?php echo get_theme_file_uri('/assets/img/logo.png') ?>" alt="Logo">
-        <nav class="menu">
-            <a href="#" class="menu-item">Home</a>
-            <a href="#" class="menu-item">Sobre a Empresa</a>
-            <a href="#" class="menu-item">Produtos</a>
-            <a href="#" class="menu-item">Servicos</a>
-            <a href="#" class="menu-item">Fale Conosco</a>
-        </nav>
-        <button class="btn btn-menu">Webmail</button>
-    </header>
-
-	<!-- Slider and Banner Internal -->
-	<?php echo SliderAndBannerInternal(); ?>
-
-	<!-- container -->
-	<div class="container">
+<body>
+         <header>
+              <div>
+                   <a href="#"><img src="#" alt="Logo"></a>
+                   <nav>
+                       <ul>
+                           <li>Sobre</li>
+                           <li>Servicos</li>
+                           <li>Galeria de Eventos</li>
+                           <li>Fale Conozco</li>
+                       </ul>
+                   </nav>
+                   <div id="tempo">
+                        <h2>Previsao do Tempo</h2>
+                        <span>Francisco Beltrao</span>
+                        <img src="" alt="clima">
+                        <h2>30º </h2>
+                   </div> 
+              </div>
+         </header>
