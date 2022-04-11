@@ -8,12 +8,12 @@ get_header();
 
 ?>
 
-<div>
+<div class="contenedor-1">
     <!-- horientacion horizontal -->
     <h1>Há 30 anos, sempre o melhor negocio!</h1>
     <div id="cotizacion">
-        <div>
-            <h3></h3>
+        <div class="contenedor-2">
+            <h3>este encabezado</h3>
             <span></span>
         </div>
         <ul>

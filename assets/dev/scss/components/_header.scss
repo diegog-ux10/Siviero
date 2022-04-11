@@ -1,2 +1,74 @@
 // HEADER
 //--------------------------------------
+
+header {
+    width: $full;
+    background-color: $color-morado;
+    display: flex;
+    justify-content: center;
+    height: 108px;
+
+    div {
+        height: inherit;
+        width: $full;
+        max-width: $max;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        gap: 20px;
+
+        .menu-menu-ejemplo-container {
+            width: 100%;
+
+            .menu {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-evenly;
+                width: 100%;
+                li {
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .tempo {
+            width: 400px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+            gap: 0;
+            justify-content: center;
+            padding: 20px 16px;
+            position: relative;
+            .previsao {
+                color: $color-verde;
+                font-weight: 600;
+                font-size: 20px;
+                margin: 0;
+                align-self: flex-start;
+            }
+            .cidade {
+                font-size: 16px;
+                color: #525252;
+                align-self: flex-start;
+            }
+
+            img {
+                position: absolute;
+            }
+        }
+
+
+       
+
+    }
+}

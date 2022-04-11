@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siviero</title>
-    <?php wp_head() ?>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!--Meta datos de Wordpress-->
+    <?php wp_head() ?>   
   
 </head>
 <body>
          <header>
               <div>
-                   <a href="#"><img src="#" alt="Logo"></a>
-                   <nav>
-                       <ul>
-                           <li>Sobre</li>
-                           <li>Servicos</li>
-                           <li>Galeria de Eventos</li>
-                           <li>Fale Conozco</li>
-                       </ul>
-                   </nav>
-                   <div id="tempo">
-                        <h2>Previsao do Tempo</h2>
-                        <span>Francisco Beltrao</span>
-                        <img src="" alt="clima">
-                        <h2>30º </h2>
+                   <a href="#"><img src="<?php echo get_theme_file_uri() . "./assets/img/Logo.png" ?>" alt="Logo"></a>
+                   
+                   <?php wp_nav_menu('menuPrincipal'); ?>
+
+                   <div class="tempo" id="tempo">
+                        <span class="previsao">Previsao do Tempo</span>
+                        <span class="cidade" id="cidade">Francisco Beltrao</span>
+                        <img src="<?php echo get_theme_file_uri() . "/assets/img/clima.png" ?>" alt="clima">
+                        <span class="temperatura" id="temperatura">30º</span>
                    </div> 
               </div>
          </header>
