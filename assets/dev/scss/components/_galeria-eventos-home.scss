@@ -1,0 +1,31 @@
+.contenedor-galeria-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    .item-evento {
+    
+        a {
+            img {
+                border: 1px solid $blanco;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            p {
+                color: $color-verde;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 18px;
+                margin: 8px 0px 4px;
+            }
+        }
+
+        small {
+            color: $blanco;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

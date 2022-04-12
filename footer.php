@@ -6,6 +6,7 @@
     <div class="derechos">
         <p>© Todos os direitos reservados - Siviero Cereais, Insumos Agrícolas e Transportes -  2022  | Política de Privacidade</p>
     </div>
+    <?php wp_footer(); ?>
 </footer>
 </body>
 </html>

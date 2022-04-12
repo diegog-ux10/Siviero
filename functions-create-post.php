@@ -1,48 +1,36 @@
 <?php
-    // CREATE POST BLOG
-    //--------------------------------------
-    add_action( 'init', 'register_blog_post_type' );
 
-    function register_blog_post_type() {
-        $labels = array(
-            'name'               => __( 'Blog' ),
-            'singular_name'      => __( 'Blog' ),
-            'add_new'            => __( 'Adicionar Novo' ),
-            'add_new_item'       => __( 'Adicionar Novo' ),
-            'edit_item'          => __( 'Editar' ),
-            'new_item'           => __( 'Novo Post' ),
-            'all_items'          => __( 'Listar Todos' ),
-            'view_item'          => __( 'Ver Post Anterior' ),
-            'search_items'       => __( 'Buscar' ),
-            'featured_image'     => 'Imagem Destacada',
-            'set_featured_image' => 'Adicionar Imagem'
-        );
+function register_events_post_types() {
 
-        $args = array(
-            'labels'            => $labels,
-            'description'       => '',
-            'public'            => true,
-            'menu_position'     => 30,
-            'supports'          => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-            'has_archive'       => true,
-            'show_in_admin_bar' => true,
-            'show_in_nav_menus' => true,
-            'menu_icon'         => 'dashicons-welcome-write-blog'
-        );
+    $labels = array(
+        'name' => __( 'Evento' ),
+        'singular_name' => __( 'Evento' ),
+        'add_new' => __( 'Adicionar Novo Evento' ),
+        'add_new_item' => __( 'Adicionar Novo Evento' ),
+        'edit_item' => __( 'Editar Evento' ),
+        'new_item' => __( 'Novo Evento' ),
+        'all_items' => __( 'Listar Todos os Eventos' ),
+        'view_item' => __( 'Ver Evento Anterior' ),
+        'search_items' => __( 'Buscar' ),
+        'featured_image' => 'Imagem Destacada',
+        'set_featured_image' => 'Adicionar Imagem',
+    );
 
-        register_post_type( 'blog', $args );
-    }
 
-    // CREATE TAXONOMY CATEGORY BLOG
-    //--------------------------------------
-    function register_noticias_taxonomy() {
-        register_taxonomy(
-            'categoria_blog',
-            'blog',
-            array(
-                'label' => __( 'Categorias' ),
-                'rewrite' => array( 'slug' => 'categoria_blog' )
-            )
-        );
-    }
-    add_action( 'init', 'register_noticias_taxonomy', 10 );
+    $arg = array(
+        'labels' => $labels,
+        'description' => '',
+        'public' => true,
+        'menu_position' => 30,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'has_archive' => true,
+        'show_in_admin_bar' => true,
+        'show_in_nav_menus' => true,
+        'menu_icon' => 'dashicons-megaphone',
+    );
+
+    register_post_type('event', $arg);
+
+}
+
+add_action( 'init', 'register_events_post_types');

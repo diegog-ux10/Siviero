@@ -5,4 +5,74 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+
+.contenedor-principal {
+    width: $full;
+    
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-secundario {
+    width: $full;
+    max-width: $max;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 0;
+}
+
 //TITULOS EN CONTENIDO
+
+.titulo-general-morado {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+
+    h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        color: $color-morado;
+    }
+
+    h2::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 0%;
+        border-bottom: 2px solid $color-verde;
+    }
+    
+}
+
+.titulo-general-blanco {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+
+    h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        color: $blanco;
+    }
+
+    h2::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 0%;
+        border-bottom: 2px solid $color-verde;
+    }
+    
+}
+

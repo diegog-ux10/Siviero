@@ -17,12 +17,12 @@
   
 </head>
 <body>
-         <header>
+         <header>              
               <div>
-                   <a href="#"><img src="<?php echo get_theme_file_uri() . "./assets/img/Logo.png" ?>" alt="Logo"></a>
+                   <!-- Logo -->
+                   <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_theme_file_uri() . "./assets/img/Logo.png" ?>" alt="Logo"></a>
                    
                    <?php wp_nav_menu('menuPrincipal'); ?>
-
                    <div class="tempo" id="tempo">
                         <span class="previsao">Previsao do Tempo</span>
                         <span class="cidade" id="cidade">Francisco Beltrao</span>

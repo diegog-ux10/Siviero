@@ -1,2 +1,15 @@
 // BUTTONS
 //--------------------------------------
+.btn-green {
+    height: 54px;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $color-verde;
+    color: $blanco;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+}

@@ -47,7 +47,7 @@ header {
             height: inherit;
             gap: 0;
             justify-content: center;
-            padding: 20px 16px;
+            padding: 0px 16px;
             position: relative;
             .previsao {
                 color: $color-verde;
@@ -64,6 +64,17 @@ header {
 
             img {
                 position: absolute;
+                left: 65%;
+                top: 57%;
+            }
+
+            .temperatura {
+                position: absolute;
+                left: 80%;
+                top: 53%;
+                color: red;
+                font-size: 32px;
+                font-weight: 700;
             }
         }
 
