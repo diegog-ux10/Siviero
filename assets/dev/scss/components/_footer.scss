@@ -1,2 +1,29 @@
 // FOOTER
 //--------------------------------------
+footer {
+    flex-direction: column;
+
+    .direccion {
+        height: 220px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        p {
+            color: $gris;
+            font-size: 18px;
+        }
+    }
+    
+    .derechos {
+        background-color: $color-verde;
+        div {
+            justify-content: center;
+            p {
+                text-align: center;
+                color: $blanco;
+                font-size: 12px;
+                font-weight: 200;
+            }
+        }
+    }
+}

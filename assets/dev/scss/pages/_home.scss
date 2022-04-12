@@ -4,7 +4,7 @@
 .main-content {
     padding-top: 50px;
     height: 1080px;
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     .contenedor-1 {
         display: flex;
@@ -100,10 +100,42 @@
 
 .eventos {
     height: 560px;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     .contenedor-secundario {
         display: flex;
         flex-direction: column;
     }
+}
+
+.ambiental {
+    background-color: $color-verde;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        right: 56%;
+        bottom: -1%;
+    }
+    .alinear-final {
+        justify-content: flex-end;
+        .info {
+            justify-content: flex-end;
+            max-width: 55%;
+            display: flex;
+            flex-direction: column;
+            p {
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 18px;
+                font-weight: 200;
+                color: $blanco;
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
 }
