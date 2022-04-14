@@ -1,0 +1,23 @@
+.produtos-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .produto-item {
+
+        display: flex;
+        width: 22%;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 992px) {
+
+    .produtos-contenedor {
+        flex-direction: column;
+    }
+    
+}

@@ -1,5 +1,6 @@
 <?php
     //Query para retornar solo los Eventos que tenga seleccionada la opcion de mostrar em home
+    $today = date('dmy');
     $eventos = new WP_Query(array(
         'posts_per_page' => 4,
         'post_type' => 'event',

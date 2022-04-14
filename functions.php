@@ -15,7 +15,6 @@ function theme_setup() {
 	function register_siviero_menu() {
 
 		register_nav_menu('menuPrincipal',__('Menu Primario'));
-		register_nav_menu('menu-rodape',__('Menu Rodape'));
 	  
 	}
 	
@@ -53,14 +52,21 @@ function theme_setup() {
 	add_image_size( 'post-thumb', 320, 190, true );
 	add_image_size( 'blog-thumb', 370, 250, true );
 
+	if(function_exists('acf_add_options_page')){
+		acf_add_options_page(array(
+			'page_title' => 'Siviero opções',
+			'menu_title' => 'Siviero opções',
+			'menu_slug'  => 'siviero_opcoes',
+			'capability' => 'manage_options',
+			'post_id'    => 'options',
+			'position'   => 3,
+			'redirect'	 => false
+		));
+	}
+
 }
 
 add_action( 'after_setup_theme', 'theme_setup' );
-
-
-
-
-
 
 
 
