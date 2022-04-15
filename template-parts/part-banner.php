@@ -3,17 +3,18 @@
 <?php get_header();?>
 
 
-  
-    <div class="titulo-general-blanco">        
-        <h2>
-        <?php 
-            if($args["title"]):    
-                echo $args["title"];
-            else:        
-                the_title();
-            endif; 
-        ?>
-        </h2>
+    <div class="contenedor-secundario">
+        <div class="titulo-general-blanco">        
+            <h2>
+            <?php 
+                if($args["title"]):    
+                    echo $args["title"];
+                else:        
+                    the_title();
+                endif; 
+            ?>
+            </h2>
+        </div>
     </div>
 
 
