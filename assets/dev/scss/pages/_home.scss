@@ -22,7 +22,7 @@
             width: 50%;
         }
 
-        #cotizacion {
+        .cotizacion {
             background-color: white;
             height: fit-content;
             width: fit-content;
@@ -70,7 +70,6 @@
                     }
 
                     span {
-                        color: black;
                         font-size: 18px;
                     }
 
@@ -91,10 +90,17 @@
 .parceiros-contenedor {
     flex-direction: column;
     div {
-        div {
+        ul {
+            list-style: none;
             display: flex;
-            justify-content: space-evenly;
-        }
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                align-self: center;
+                display: flex;
+            }
+        }           
     }
 }
 
