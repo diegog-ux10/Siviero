@@ -11,43 +11,57 @@ get_header();
 <div class="contenedor-1">
     <!-- horientacion horizontal -->
     <h1>Há 30 anos, sempre o melhor negocio!</h1>
-    <div id="cotizacion">
+    <div class="cotizacion">
         <div class="contenedor-2">
             <h3>Cotação do Dia</h3>
-            <span>09/03</span>
+            <span><?php echo date('d/m') ?></span>
         </div>
         <ul>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
-            <li><p>Soja Comercial</p><span>R$195,00</span><small>Saca</small></li>
+            
+            <?php 
+            
+            $cotizaciones = new WP_Query(array(
+                'posts_per_page' => -1,
+                'post_type' => 'cotizacion',
+            ))
+
+            ?>
+
+            <?php while($cotizaciones->have_posts()):
+                $cotizaciones->the_post(); ?>
+
+                <li>
+                    <p><?php the_title(); ?></p>
+                    <span class="<?= get_field('cambio'); ?>"><?= "R$" . get_field('precio'); ?></span>
+                    <small>Saca</small>
+                </li>
+
+            <?php endwhile; ?>
         </ul>
         
     </div>
 </div>
 </section>
 <section class="contenedor-principal">
+
     <div class="contenedor-secundario parceiros-contenedor padding">
-       <div class="titulo-general-morado"><h2 >Parceiros Siviero</h2></div>
+        <div class="titulo-general-morado">
+           <h2 >Parceiros Siviero</h2>
+        </div>
         <div>
-            <div>
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt=""><img src="" alt="">
-            </div>
-            <div>
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt="">
-                <img src="<?php echo get_theme_file_uri() . "/assets/img/parceiros.png" ?>" alt=""><img src="" alt="">
-            </div>
+
+            <?php 
+            $images = get_field('parceiro', 'options');
+            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+            if( $images ): ?>
+                <ul>
+                    <?php foreach( $images as $image_id ): ?>
+                        <li>
+                            <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
     </div>
 </section>
