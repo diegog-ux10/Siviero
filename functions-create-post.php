@@ -76,3 +76,35 @@ function register_produtos_post_types() {
 }
 
 add_action( 'init', 'register_produtos_post_types');
+
+function register_cotizaciones_post_types() {
+
+    $cotizacion_labels = array(
+        'name' => __( 'Cotação' ),
+        'singular_name' => __( 'Cotação' ),
+        'add_new' => __( 'Adicionar Novo Cotação' ),
+        'add_new_item' => __( 'Adicionar Novo Cotação' ),
+        'edit_item' => __( 'Editar Cotação' ),
+        'new_item' => __( 'Novo Cotação' ),
+        'all_items' => __( 'Listar Todos os Cotaçãos' ),
+        'view_item' => __( 'Ver Cotação Anterior' ),
+        'search_items' => __( 'Buscar' ),
+        'featured_image' => __('Imagem Destacada'),
+        'set_featured_image' => __('Adicionar Imagem'),
+    );
+
+    $cotizacion_arg = array(
+        'show_in_rest' => true,
+        'labels' => $cotizacion_labels,
+        'description' => '',
+        'public' => true,
+        'menu_position' => 30,
+        'supports' => array('title'),
+        'menu_icon' => '',
+    );
+
+    register_post_type( 'cotizacion', $cotizacion_arg );
+
+}
+
+add_action( 'init', 'register_cotizaciones_post_types' );
