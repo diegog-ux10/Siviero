@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 .contenedor-principal {
     width: $full;
     
@@ -104,5 +106,31 @@ body {
 }
 
 .padding {
-    padding: 64px 0;
+    padding: 64px 0 64px;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+}
+
+.filas {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-parrafo {
+    line-height: 1.5;
+    font-size: 18px;
+    color: $gris2;
+}
+
+//Cambio del color del precio
+
+.price-color-up {
+    color: $color-verde;
+}
+
+.price-color-down {
+    color: red;
 }
