@@ -1,0 +1,17 @@
+.contenedor-de-eventos {
+    flex-wrap: wrap;
+    .item-evento {
+        width: 25%;
+        margin-bottom: 32px;
+        a {
+            img {
+                width: 272px;
+                height: 176px;
+            }
+        }
+        
+        small {
+            color: $gris2;
+        }
+    }
+}
