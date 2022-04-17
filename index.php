@@ -1,4 +1,4 @@
-<?php get_template_part(); ?>
+<?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Fale Conosco']); ?>
 
 Index
 
