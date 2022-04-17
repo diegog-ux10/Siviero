@@ -47,7 +47,7 @@ get_header();
     <div class="contenedor-secundario parceiros-contenedor padding">
         <div class="titulo-general-morado">
            <h2 >Parceiros Siviero</h2>
-        </div>
+         </div>
         <div>
 
             <?php 
@@ -98,6 +98,7 @@ get_header();
     </div>
 
 </section>
+
 
 
 
