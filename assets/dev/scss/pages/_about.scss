@@ -1,2 +1,26 @@
 // PAGE ABOUT
 //--------------------------------------
+
+.contenedor-unidades {
+    display: flex;
+    justify-content: space-between;
+    .item-unidad {
+        display: flex;
+        flex-direction: column;
+        img {
+
+        }
+        p {
+            font-size: 18px;
+            color: $color-verde;
+            font-weight: 900;
+        }
+
+        small {
+            font-size: 18px;
+            color: $gris2;
+            margin: 4px;
+            font-weight: 600;
+        }
+    }
+}

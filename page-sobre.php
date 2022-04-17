@@ -11,7 +11,8 @@
 
        <br><br>O principal motivo para conquistarmos clientes é que a empresa Siviero Cereais e Insumos Agricolas, além de estar em constante aperfeiçoamento, proporciona ao seu cliente comodidade, economia e segurança, aumentando cada vez mais os ganhos do produtor rural. A confiança adquirida ao longo dos anos junto aos seus clientes é fruto de um trabalho sério, inovador e de credibilidade dos serviços prestados.</p>
 
-        <video src="https://www.youtube.com/watch?v=cAutVjryE6kk"></video>
+       
+
 
     </div>
 
@@ -47,39 +48,46 @@
 
 <section class="contenedor-principal">
 
-<?php
-    //Corregir por el correspondiente
-    $today = date('dmy');
-    $unidades = new WP_Query(array(
-        'posts_per_page' => 4,
-        'post_type' => 'event',
-        'meta_key' => 'evento_home',
-        'meta_value' => true,
-    ))
-?>  
-
     <div class="contenedor-secundario padding columnas">
 
-    <div class="titulo-general-morado"><h2>Unidades</h2></div>
+        <div class="titulo-general-morado"><h2>Unidades</h2></div>
 
-        <div class="contenedor-galeria-home">
-            <?php while($unidades->have_posts()):
-            $unidades->the_post(); ?>
-
-                <div class="item-evento">                
-                    <a href="<?php the_permalink(); ?>">
-                        <img src="<?= get_the_post_thumbnail_url(); ?>">
-                    </a>                
-                    <a href="<?php the_permalink(); ?>">
-                        <p><?php the_title(); ?></p>
-                    </a>
-                    <small style="color: #666666;"><?= get_field('fecha'); ?></small>
-                </div>
-            <?php endwhile; ?>                   
-        </div>    
-
+            <div class="contenedor-unidades">
+                    <div class="item-unidad">              
+                        <img src="<?php echo get_theme_file_uri() . "/assets/img/empresa01.png"?>">          
+                        <p>Unidade Clevelândia - PR</p>
+                        <small>Av. Ns. Senhora da Luz, 2005</small>
+                        <small>Bairro: Centro</small>
+                        <small>CEP: 85530-000</small>
+                        <small>Fone: (46) 3252-8350</small>
+                    </div>
+                    <div class="item-unidad">              
+                        <img src="<?php echo get_theme_file_uri() . "/assets/img/empresa02.png"?>">          
+                        <p>Unidade Palmas - PR</p>
+                        <small>Rodovia Prt 280, KM 66</small>
+                        <small>Bairro: Tia Joana</small>
+                        <small>CEP: 85555-000</small>
+                        <small>Fone: (46) 3262-3001</small>
+                    </div> 
+                    <div class="item-unidad">              
+                        <img src="<?php echo get_theme_file_uri() . "/assets/img/empresa03.png"?>">          
+                        <p>Unidade Mariópolis - PR</p>
+                        <small>Av. Ns. Senhora da Luz, 2005</small>
+                        <small>Bairro: Centro</small>
+                        <small>CEP: 85530-000</small>
+                        <small>Fone: (46) 3252-8350</small>
+                    </div> 
+                    <div class="item-unidad">              
+                        <img src="<?php echo get_theme_file_uri() . "/assets/img/empresa04.png"?>">          
+                        <p>Unidade São Domingos - SC</p>
+                        <small>Rua Alameda 1, 1521</small>
+                        <small>Bairro: Água Azul</small>
+                        <small>CEP: 85525-000</small>
+                        <small>Fone: (46) 3226-1503</small>
+                    </div>                 
+            </div>
+        
     </div>   
-
 </section>
 
 
