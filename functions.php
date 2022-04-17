@@ -21,11 +21,26 @@ function theme_setup() {
 	add_action( 'init', 'register_siviero_menu' );
 
 	function siviero_scripts() {
-	
-		
 
+		//BOOTSTRAP
+		wp_enqueue_style('css-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", ' ', true);
+		wp_enqueue_script('js-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", 'jquery-main', ' ', true);
+		
+		//lightbox
+		wp_enqueue_script('js-lightbox', "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.11/dist/index.bundle.min.js", 'js-bootstrap', ' ', true);
+		
+		//Theme
 		wp_enqueue_style('css-siviero', get_template_directory_uri() . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
-	
+		
+		// FORMS
+		if(is_page() == 'fale-conosco'){
+			wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
+			wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
+		}
+
+		// // Weather
+		// wp_enqueue_script('js-weather', get_template_directory_uri() . '/assets/js/weather.min.js', wp_get_theme()->get( 'Version'));
+		
 	
 	}
 	
@@ -67,6 +82,31 @@ function theme_setup() {
 }
 
 add_action( 'after_setup_theme', 'theme_setup' );
+
+
+ // // MENU PRINCIPAL
+    //--------------------------------------
+
+    function register_navwalker() {
+        require_once(__DIR__ . '/class-wp-bootstrap-navwalker.php');
+    }
+
+    add_action( 'after_setup_theme', 'register_navwalker' );
+
+
+    function MenuPrincipal() {
+        
+        $menu = wp_nav_menu(array(
+            'theme_location'  => 'menu-principal',
+            'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+            'container'       => 'div',
+            'container_class' => 'collapse navbar-collapse',
+            'container_id'    => 'bs-example-navbar-collapse-1',
+            'menu_class'      => 'navbar-nav mr-auto',
+            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'          => new WP_Bootstrap_Navwalker(),
+        ));
+    }
 
 
 
