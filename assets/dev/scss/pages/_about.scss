@@ -4,6 +4,15 @@
 .contenedor-unidades {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 80px;
+    white-space:nowrap;
+    height: fit-content;
+    gap: 32px;
+    padding-bottom: 16px;
+
     .item-unidad {
         display: flex;
         flex-direction: column;
@@ -25,6 +34,31 @@
     }
 }
 
+section.vision {
+    background-color: $color-morado;
+    div.vision-contenedor {
+        display: flex;
+        justify-content: space-between;
+        
+        div.valores {
+            width: 25%;
+            color: white;
+            p {
+                line-height: 1.8;
+                text-align: justify;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+    }
+}
+
 @media (max-width: 992px) {
     .contenedor-unidades {
         overflow-x: scroll;
@@ -41,4 +75,13 @@
     section.banner {
         height: fit-content;
     }
+}
+
+@media (max-width: 425px) {
+ div.vision-contenedor {
+     flex-direction: column;
+     div.valores {
+         width: 100% !important;
+     }
+ }   
 }
