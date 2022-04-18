@@ -24,3 +24,21 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .contenedor-unidades {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 80px;
+        white-space:nowrap;
+        height: fit-content;
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    section.banner {
+        height: fit-content;
+    }
+}

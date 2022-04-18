@@ -1,9 +1,9 @@
-<section class="banner" style="background-repeat:no-repeat; background-image: url(<?php echo get_theme_file_uri( ) . "/assets/img/Header.png"  ?>)">
+<section class="banner" style="background-repeat:no-repeat; background-image: url(<?php echo get_theme_file_uri( ) . "/assets/img/Fondo.png"  ?>)">
 
 <?php get_header();?>
 
 
-    <div class="contenedor-secundario">
+    <div class="contenedor-secundario padding-responsive">
         <div class="titulo-general-blanco">        
             <h2>
             <?php 

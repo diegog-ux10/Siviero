@@ -1,7 +1,7 @@
 <?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Sobre nós']); ?>
 
 <section class="contenedor-principal">
-    <div class="contenedor-secundario columnas padding">
+    <div class="contenedor-secundario columnas padding padding-responsive">
         <div class="titulo-general-morado"><h2>A empresa</h2></div>
         <p class="texto-parrafo">Siviero Cereais e Insumos Agrícolas é uma empresa que busca o constante aperfeiçoamento de suas técnicas para melhor atender o seu cliente. Com 30 anos no mercado está sempre atenta às últimas tendências do mercado oferecendo aos seus parceiros (produtores) sempre o melhor negócio, serviços e produtos .
 
@@ -19,7 +19,7 @@
 </section>
 
 <section class="contenedor-principal">
-    <div class="contenedor-secundario columnas padding">
+    <div class="contenedor-secundario columnas padding padding-responsive">
         <div class="titulo-general-morado"><h2>Infra estrutura</h2></div>
         <p class="texto-parrafo">A empresa, cuja matriz está no município de Clevelândia, possui silos para armazenagem de cereais, moegas para descarga, equipadas com tombador hidráulico, armazéns para a armazenagem de cereais e fertilizantes, entre outros produtos comercializados.
 
@@ -38,7 +38,7 @@
 </section>
 
 <section class="contenedor-principal">
-    <div class="contenedor-secundario columnas padding">
+    <div class="contenedor-secundario columnas padding padding-responsive">
         <div class="titulo-general-morado"><h2>Área de Atuação</h2></div>
         <p class="texto-parrafo">A empresa atua na região sudoeste do Paraná e oeste Catarinense, mais precisadamente nos municípios de Clevelândia, Mariópolis, Honório Serpa, Palmas e Mangueirinha, todas no estado do Paraná. Também atua nos municípios de São Domingos, Ipuaçu, Bom Jesus, Ouro Verde, Abelardo Luz, Galvão e Jupiá, Água Doce, no estado de Santa Catarina.</p>
 
@@ -48,7 +48,7 @@
 
 <section class="contenedor-principal">
 
-    <div class="contenedor-secundario padding columnas">
+    <div class="contenedor-secundario padding columnas padding-responsive">
 
         <div class="titulo-general-morado"><h2>Unidades</h2></div>
 
