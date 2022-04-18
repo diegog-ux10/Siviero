@@ -33,10 +33,10 @@ function theme_setup() {
 		wp_enqueue_style('css-siviero', get_template_directory_uri() . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
 		
 		// FORMS
-		if(is_page() == 'fale-conosco'){
-			wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
-			wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
-		}
+		// if(is_page() == 'fale-conosco'){
+		// 	wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
+		// 	wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
+		// }
 
 		// // Weather
 		// wp_enqueue_script('js-weather', get_template_directory_uri() . '/assets/js/weather.min.js', wp_get_theme()->get( 'Version'));
