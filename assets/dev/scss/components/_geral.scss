@@ -140,3 +140,10 @@ body {
 .price-color-same {
     color: $gris2;
 }
+
+@media (max-width:1200px) {
+
+    div.padding-responsive {
+        padding: 32px;
+    }
+}

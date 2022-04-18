@@ -8,6 +8,7 @@
         a {
             img {
                 border: 1px solid $blanco;
+
             }
         }
 
@@ -26,6 +27,20 @@
             color: $blanco;
             font-size: 14px;
             font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .contenedor-galeria-home {  
+        .item-evento {
+        
+            a {
+                img {
+                    width: 250px;
+    
+                }
+            }
         }
     }
 }

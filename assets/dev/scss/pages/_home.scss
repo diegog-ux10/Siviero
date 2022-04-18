@@ -154,12 +154,28 @@
     
 }
 
-@media (max-width:1200px) {
 
-    div.padding-responsive {
-        padding: 32px;
-    }
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    div.contenedor-galeria-home {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 80px;
+        white-space:nowrap;
+        height: fit-content;
+        gap: 16px;
+        padding-bottom: 16px;
+    } 
+
+
 }
+
+
 
 @media (max-width: 992px) {
     
@@ -176,15 +192,16 @@
         }
     }
 
-    div.contenedor-galeria-home {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        height: 80px;
-        white-space:nowrap;
-        height: fit-content;
-        gap: 16px;
-        padding-bottom: 16px;
-    } 
+}
+
+@media (max-width: 768px) {
+    section.eventos {
+        div.contenedor-secundario  {
+            button.btn-green {
+                    width: 100%;
+                }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -208,4 +225,89 @@
             }
         }
     }
+}
+
+@media (max-width: 425px) {
+    div.parceiros-contenedor {
+        div {
+            ul {
+               flex-wrap: nowrap;
+               overflow-x: scroll;
+                overflow-y: hidden;
+                height: 80px;
+                white-space:nowrap;
+                height: fit-content;
+                gap: 32px;
+                padding-bottom: 16px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    section.main-content {
+        div.contenedor-1 {
+            h1 {
+                font-size: 50px;
+            }
+
+            div.cotizacion {
+                width: 100%;
+                .contenedor-2 {
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        height: 24px;
+                        width: 78px;
+                    }
+                }
+
+                ul {
+                    li {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            align-self: center;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    div.parceiros-contenedor {
+        .parceiros {
+            ul {
+                padding: 0;
+                gap: 0;
+                li {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    section.ambiental {
+
+        div {
+            div.info {
+
+                a {
+                    button {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+        
+    }
+
 }

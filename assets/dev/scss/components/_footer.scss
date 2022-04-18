@@ -35,6 +35,8 @@ footer {
     footer {
         .direccion {
             flex-direction: column;
+            height: fit-content;
+            gap: 18px;
             p {
                 text-align: center;
             }

@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-<div class="contenedor-1">
+<div class="contenedor-1 padding-responsive">
     <!-- horientacion horizontal -->
     <h1>Há 30 anos, sempre o melhor negocio!</h1>
     <div class="cotizacion">
@@ -48,7 +48,7 @@ get_header();
         <div class="titulo-general-morado">
            <h2 >Parceiros Siviero</h2>
          </div>
-        <div class="padding-responsive"> 
+        <div class="padding-responsive parceiros"> 
 
             <?php 
             $images = get_field('parceiro', 'options');
