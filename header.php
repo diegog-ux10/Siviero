@@ -18,16 +18,16 @@
 </head>
 <body>
     <!-- //Responsive tempo -->
-    <div class="tempo-mobile" id="tempo">
+    <div class="tempo-mobile" id="tempo-mobile">
         <span class="previsao-mobile">Previsao do Tempo</span>
-        <span class="cidade-mobile" id="ubicacion">Francisco Beltrao</span>
-        <img src="<?php echo get_theme_file_uri() . "/assets/img/clima.png" ?>" alt="clima" id="icono-animado">
-        <span class="temperatura-mobile" id="temperatura-valor">30º</span>
+        <span class="cidade-mobile" id="ubicacion-mobile">Francisco Beltrao</span>
+        <img src="<?php echo get_theme_file_uri() . "/assets/img/clima.png" ?>" alt="clima" id="icono-animado-mobile">
+        <span class="temperatura-mobile" id="temperatura-valor-mobile">30º</span>
     </div> 
      
 
          <header>              
-              <div>
+              <div class="padding-responsive">
                    <!-- Logo -->
                    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_theme_file_uri() . "./assets/img/Logo.png" ?>" alt="Logo"></a>
                    
