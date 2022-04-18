@@ -90,6 +90,42 @@
     </div>   
 </section>
 
+<section class="contenedor-principal vision">
+    <div class="contenedor-secundario vision-contenedor padding padding-responsive">
+    <div class="columnas valores">
+        <div class="titulo-general-blanco">
+            <h2>Missao</h2>
+        </div>
+        <p>“Disponibilizar insumos e serviços de qualidade, proporcionando satisfação e resultado aos clientes, parceiros e colaboradores”.</p>
+    </div>
+    <div class="columnas valores">
+        <div class="titulo-general-blanco">
+            <h2>Visao</h2>
+        </div>
+        <p>“Ser reconhecida como empresa referência do agronegócio, promovendo o desenvolvimento sustentável”.</p>
+        
+    </div>
+    <div class="columnas valores">
+        <div class="titulo-general-blanco">
+            <h2>Valores</h2>
+            
+        </div>
+        <ul>
+            <li>- Ética</li>
+            <li>- Confiança</li>
+            <li>- Qualidade</li>
+            <li>- Transparência</li>
+            <li>- Inovação</li>
+            <li>- Credibilidade</li>
+            <li>- Satisfação do cliente</li>
+            <li>- Responsabilidade sócio - ambiental</li>
+        </ul>
+        
+    </div>
+    </div>
+
+</section>
+
 
 
 <?php get_footer(); ?>
