@@ -1,2 +1,49 @@
 // PAGE CONTACT
 //--------------------------------------
+
+
+.informacion {
+    display: flex;
+    gap: 5%;
+    .columna-izquierda {
+    width: 30%;
+    }
+    .columna-derecha {
+        width: 65%;
+        .principal {
+            label, select {
+                width: 100%;
+                height: 50px;
+                margin-bottom: 24px;
+                color: $gris2;
+                
+                span {
+                    width: 100%;
+                    color: $gris2;
+                    input {
+                        width: 100%;
+                        border: 1px solid $color-verde;
+                        height: 50px;
+                        padding-left: 8px;
+                    }
+                }
+            }
+
+            select {
+                border: 1px solid $color-verde;
+                padding-left: 8px;
+            }
+
+            textarea {
+                width: 100%;
+                border: 1px solid $color-verde;
+
+            }
+
+            .arriba {
+                display: flex;
+                gap: 32px;
+            }
+        }
+    }
+}

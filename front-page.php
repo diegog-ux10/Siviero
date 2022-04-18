@@ -44,17 +44,17 @@ get_header();
 </section>
 <section class="contenedor-principal">
 
-    <div class="contenedor-secundario parceiros-contenedor padding">
+    <div class="contenedor-secundario parceiros-contenedor padding padding-responsive">
         <div class="titulo-general-morado">
            <h2 >Parceiros Siviero</h2>
          </div>
-        <div>
+        <div class="padding-responsive"> 
 
             <?php 
             $images = get_field('parceiro', 'options');
             $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
             if( $images ): ?>
-                <ul>
+                <ul >
                     <?php foreach( $images as $image_id ): ?>
                         <li>
                             <?php echo wp_get_attachment_image( $image_id, $size ); ?>
@@ -69,7 +69,7 @@ get_header();
 <section class="contenedor-principal eventos" style="background-repeat:no-repeat; background-image: url(<?php echo get_theme_file_uri( ) . "/assets/img/fondo-1.png"  ?>)">
 
 
-    <div class="contenedor-secundario">
+    <div class="contenedor-secundario padding-responsive">
         <div class="titulo-general-blanco">
             <h2 >Galeria de Eventos</h2>
         </div>
@@ -85,7 +85,7 @@ get_header();
     
     <img src="<?= get_theme_file_uri() . "/assets/img/arbol.png"?>" alt="">
 
-    <div class="contenedor-secundario alinear-final padding">
+    <div class="contenedor-secundario alinear-final padding padding-responsive">
         <div class="info">
             <div class="titulo-general-blanco-morado">
                 <h2 >Responsabilidade Ambiental</h2>
@@ -93,7 +93,7 @@ get_header();
             <p><strong>Siviero Cereais e Insumos Agrícolas</strong> é uma empresa que se preocupa com a questão de proteção do meio ambiente. Por isso, através de toda a sua equipe técnica, que está em constante treinamento, busca orientar os empresários rurais acerca das melhores práticas agrícolas que conciliam a conservação do meio ambiente a uma boa produção que possibilite um bom retorno econômico, ou seja, estimulando o desenvolvimento sustentável.<br><br>      
 
             Há também grande preocupação em orientar o empresário rural acerca do uso dos equipamentos para o manejo de produtos agrotóxicos e o cuidado com o recolhimento das embalagens dando uma destinação às mesmas conforme calendário e pontos de coleta determinados pela <strong>ARIAS (Associação de Revendas de Insumos Agrícolas do Sudoeste do Paraná).</strong></p>
-            <button class="btn-purple">Calendário de coletaS 2022</button>
+            <a download="Calendário de coletaS 2022.pdf" href="http://localhost/wordpress/wp-content/uploads/2022/04/858679904884.pdf" target="_blank"><button class="btn-purple" >Calendário de coletaS 2022</button></a>
         </div>
     </div>
 

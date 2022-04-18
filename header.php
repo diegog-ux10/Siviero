@@ -17,6 +17,13 @@
   
 </head>
 <body>
+    <!-- //Responsive tempo -->
+    <div class="tempo-mobile" id="tempo">
+        <span class="previsao-mobile">Previsao do Tempo</span>
+        <span class="cidade-mobile" id="ubicacion">Francisco Beltrao</span>
+        <img src="<?php echo get_theme_file_uri() . "/assets/img/clima.png" ?>" alt="clima" id="icono-animado">
+        <span class="temperatura-mobile" id="temperatura-valor">30º</span>
+    </div> 
      
 
          <header>              
