@@ -1,7 +1,7 @@
 <?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Fale Conosco']); ?>
 
 <section class="contenedor-principal contacto">
-    <div class="contenedor-secundario informacion padding">
+    <div class="contenedor-secundario informacion padding padding-responsive">
         <div class="columnas columna-izquierda">
             <div class="titulo-general-morado"><h2>Endereço</h2></div>
             <p>Avenida Nossa Senhora da Luz,<br>

@@ -5,6 +5,7 @@
 .informacion {
     display: flex;
     gap: 5%;
+    margin-bottom: 64px;
     .columna-izquierda {
     width: 30%;
     }
@@ -46,4 +47,25 @@
             }
         }
     }
+}
+
+@media (max-width: 576px) {
+    .informacion {
+        flex-direction: column;
+        
+        .columna-derecha, .columna-izquierda {
+            width: 100%;
+        }
+
+        .columna-derecha {
+            .principal {
+                .arriba {
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+        }
+    }
+
+    
 }
