@@ -21,27 +21,25 @@ function theme_setup() {
 	add_action( 'init', 'register_siviero_menu' );
 
 	function siviero_scripts() {
+		//Jquery
+		wp_enqueue_script('jquery-main', get_template_directory_uri() . '/assets/vendor/jquery/jquery-1.11.0.min.js', '1.0', true);
 
 		//BOOTSTRAP
+
 		wp_enqueue_style('css-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", ' ', true);
 		wp_enqueue_script('js-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", 'jquery-main', ' ', true);
 		
-		//lightbox
-		wp_enqueue_script('js-lightbox', "https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.11/dist/index.bundle.min.js", 'js-bootstrap', ' ', true);
-		
 		//Theme
+
 		wp_enqueue_style('css-siviero', get_template_directory_uri() . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
 		
 		// FORMS
-		// if(is_page() == 'fale-conosco'){
-		// 	wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
-		// 	wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
-		// }
 
-		// // Weather
-		// wp_enqueue_script('js-weather', get_template_directory_uri() . '/assets/js/weather.min.js', wp_get_theme()->get( 'Version'));
+		if(is_page() == 'fale-conosco'){
+			wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
+			wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
+		}
 		
-	
 	}
 	
 	add_action( 'wp_enqueue_scripts', 'siviero_scripts' );
