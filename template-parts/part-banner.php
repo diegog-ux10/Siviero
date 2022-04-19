@@ -3,7 +3,7 @@
 <?php get_header();?>
 
 
-    <div class="contenedor-secundario padding-responsive">
+    <div class="contenedor-secundario padding-responsive banner-titulo">
         <div class="titulo-general-blanco">        
             <h2>
             <?php 
