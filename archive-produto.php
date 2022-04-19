@@ -1,7 +1,7 @@
 <?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Nosso Produtos']); ?>
 
 <section class="contenedor-principal">
-    <div class="contenedor-secundario padding">
+    <div class="contenedor-secundario padding padding-responsive">
         <div class="produtos-contenedor">
             <?php while(have_posts()): the_post(); ?>
                 <div class="produto-item">

@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 
     .produto-item {
 
@@ -14,10 +15,22 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
     .produtos-contenedor {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 80px;
+        white-space:nowrap;
+        height: fit-content;
+        gap: 32px;
+        padding-bottom: 16px;
+        .produto-item {
+
+            width: 50%;
+    
+        }
     }
     
 }
