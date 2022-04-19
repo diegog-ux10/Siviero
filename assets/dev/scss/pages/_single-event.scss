@@ -7,13 +7,23 @@
     width: 100%;
     height: 100px;
     gap: 5px;
-    justify-self: center;
-    .imagen-galeria {
+    // justify-self: center;
+    // flex-wrap: nowrap;
+    // overflow-x: scroll;
+    // overflow-y: hidden;
+    // white-space:nowrap;
+    // height: fit-content;
+    // padding-bottom: 16px;
 
-        img {
-            height: 100%;
-            width: 145px;
+
+   
+        a.enlace-galeria {
+            img.img-galeria {
+            height: 85.5px;
+            width: 136.5px;
+            }
         }
+    }
+    
 
-    } 
-}
+        
