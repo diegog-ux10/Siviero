@@ -25,5 +25,9 @@
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
-  ]
+  ],
+  "dependencies": {
+    "fslightbox": "^3.3.1",
+    "lightbox3": "^0.1.0"
+  }
 }
