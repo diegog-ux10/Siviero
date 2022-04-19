@@ -1,17 +1,36 @@
 .contenedor-de-eventos {
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    gap: 32px;
     .item-evento {
-        width: 25%;
+        width: 275px;
         margin-bottom: 32px;
         a {
             img {
-                width: 272px;
+                width: 275px;
                 height: 176px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            p {
+                color: $color-verde;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 18px;
+                margin: 8px 0px 4px;
             }
         }
         
         small {
             color: $gris2;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 }
+

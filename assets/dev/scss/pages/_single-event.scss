@@ -24,6 +24,20 @@
             }
         }
     }
+
+    @media (max-width: 1200px) {
+
+        .contenedor-galeria {
+            justify-self: center;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space:nowrap;
+            height: fit-content;
+            padding-bottom: 16px;
+        }
+        
+    }
     
 
         

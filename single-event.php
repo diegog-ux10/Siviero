@@ -1,7 +1,7 @@
 <?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Galeria de Eventos']); ?>
 
 <section class="contenedor-principal">
-    <div class="contenedor-secundario padding columnas">
+    <div class="contenedor-secundario padding columnas padding-responsive">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo get_home_url(); ?>" style="color: purple">Home</a></li>
@@ -16,7 +16,7 @@
         <?php 
             $images = get_field('galeria'); // (thumbnail, medium, large, full or custom size)
             if( $images ): ?>
-                <ul class="contenedor-galeria">
+                <ul class="contenedor-galeria padding-responsive">
                     <?php foreach( $images as $image_url ): ?>
                         <li class="imagen-galeria">
                             </li>

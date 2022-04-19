@@ -1,10 +1,10 @@
 <?php get_template_part( 'template-parts/part', 'banner', ['title' => 'Galeria de eventos']); ?>
 <section class="contenedor-principal">
-    <div class="contenedor-secundario columnas padding">
+    <div class="contenedor-secundario columnas padding padding-responsive">
         <div class="titulo-general-morado">
             <h2>Todos os Eventos</h2>
         </div>
-        <div class="contenedor-galeria-home contenedor-de-eventos">
+        <div class="contenedor-de-eventos">
         <?php while(have_posts()):
             the_post(); ?>
             <div class="item-evento">                
