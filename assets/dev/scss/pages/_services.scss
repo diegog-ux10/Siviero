@@ -5,3 +5,9 @@
         height: fit-content;
     }
 }
+
+@media (max-width: 768px) {
+    div.servicio {
+        flex-direction: column;
+    }
+}

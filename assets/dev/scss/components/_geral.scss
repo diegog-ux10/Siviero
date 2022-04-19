@@ -107,7 +107,8 @@ body {
 }
 
 .padding {
-    padding: 64px 0 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .columnas {
@@ -144,6 +145,7 @@ body {
 @media (max-width:1200px) {
 
     div.padding-responsive {
-        padding: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
