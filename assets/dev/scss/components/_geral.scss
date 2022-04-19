@@ -54,6 +54,33 @@ body {
     
 }
 
+.titulo-general-morado-sin-margen {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 16px ;
+
+    h3 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        color: $color-morado;
+    }
+
+    h3::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 0%;
+        border-bottom: 4px solid $color-verde;
+    }
+    
+}
+
+
 .titulo-general-blanco {
     display: inline-block;
     padding-bottom: 5px;

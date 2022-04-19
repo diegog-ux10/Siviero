@@ -8,6 +8,12 @@
     margin-bottom: 64px;
     .columna-izquierda {
     width: 30%;
+    p, span, a {
+        text-decoration: none;
+        margin-bottom: 16px;
+        font-size: 18px;
+        color: $gris2;
+    }
     }
     .columna-derecha {
         width: 65%;
