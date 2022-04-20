@@ -76,7 +76,7 @@ get_header();
 
         <?php get_template_part( 'template-parts/part', 'galeria'); ?>
 
-        <button class="btn-green">Todos os eventos</button>  
+        <a href="<?php echo get_home_url() . "/eventos" ?>" class="enlace"><button class="btn-green">Todos os eventos</button></a>  
 
     </div>
 </section>

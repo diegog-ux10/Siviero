@@ -1,8 +1,16 @@
-.contenedor-galeria-home {
+a.enlace {
+        margin: 0 auto;
+    }
+    
+    .contenedor-galeria-home {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 32px;
+
+    
+
+    
     .item-evento {
     
         a {

@@ -3,9 +3,13 @@
 
 .main-content {
     padding-top: 50px;
-    height: 1080px;
+    height: 150vh;
     background-size: cover;
     width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
     .contenedor-1 {
         display: flex;
         flex-direction: row;
@@ -13,8 +17,9 @@
         width: $full;
         max-width: $max;
         margin: 0 auto;
-        height: inherit;
+        height: 150vh;
         align-items: center;
+
         h1 {
             font-weight: 700;
             font-size: 68.61px;
@@ -72,9 +77,10 @@
                     p {
                         margin: 0;
                         font-size: 18px;
-                        color: #6666;
+                        color: $gris2;
                         margin-bottom: 4px;
                         width: 65%;
+                        opacity: 1;
                     }
 
                     span {
@@ -118,7 +124,9 @@
     .contenedor-secundario {
         display: flex;
         flex-direction: column;
+
     }
+    
 }
 
 .ambiental {
@@ -197,8 +205,12 @@
 @media (max-width: 768px) {
     section.eventos {
         div.contenedor-secundario  {
-            button.btn-green {
+            
+
+                a {
+                    width: 100%;button.btn-green {
                     width: 100%;
+                }
                 }
         }
     }
